@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  
+</head>
+<body>
+
+  <header>
+
+    
+  
+    <nav>
+  
+      <img class="img_logo" alt="" src="images/logo.svg">
+  
+      <ul class="ul1">
+  
+        <li class="li1">
+          Product <img src="images/icon-arrow-light.svg" class="arrow_light">
+          <ul class="ul2">
+            <li class="li2">Overview</li>
+            <li class="li2">Pricing</li>
+            <li class="li2">Marketplace</li>
+            <li class="li2">Features</li>
+            <li class="li2">Integrations</li>
+          </ul>
+        </li>
+  
+        <li class="li1">
+          Company <img src="images/icon-arrow-light.svg" class="arrow_light">
+          <ul class="ul2">
+            <li class="li2">About</li>
+            <li class="li2">Team</li>
+            <li class="li2">Blog</li>
+            <li class="li2">Careers</li>
+          </ul>
+        </li>
+  
+        <li class="li1">
+          Connect <img src="images/icon-arrow-light.svg" class="arrow_light">
+          <ul class="ul2">
+            <li class="li2">Contact</li>
+            <li class="li2">Newsletter</li>
+            <li class="li2">LinkedIn</li>
+          </ul>
+        </li>
+  
+  
+      </ul>
+
+      <script src='script.js' type="text/javascript"></script>
+  
+      <button class="btn1_menu">Login</button>
+      <button class="btn2_menu">Sign Up</button>
+  
+      <button id="toggle1" onclick="AfficherMasquer()">
+        <img src="images/icon-hamburger.svg" class="MenuIcon" alt="icon_hamburger">
+        <img src="images/icon-close.svg" class="Xicon" alt="icon_x">
+      </button>
+  
+    </nav>
+
+    <!-- MENU HAMBURGER ----------------------------- -->
+  
+    
+  
+    <ul id="ul1_ham" style="display:none;">
+  
+      <li class="li1_ham">
+        <button class="button_li_ham" onclick="AfficherMasquer2()">Product <img src="images/icon-arrow-dark.svg" class="arrow_light_ham" style="margin-left: 5px;"></button>
+        <ul id="ul2_ham1" style="display:none;">
+          <li class="li2_ham">Overview</li>
+          <li class="li2_ham">Pricing</li>
+          <li class="li2_ham">Marketplace</li>
+          <li class="li2_ham">Features</li>
+          <li class="li2_ham">Integrations</li>
+        </ul>
+      </li>
+  
+      <li class="li1_ham">
+        <button class="button_li_ham" onclick="AfficherMasquer3()">Company<img src="images/icon-arrow-dark.svg" class="arrow_light_ham" style="margin-left: 8px;"></button>
+        <ul id="ul2_ham2" style="display:none;">
+          <li class="li2_ham">About</li>
+          <li class="li2_ham">Team</li>
+          <li class="li2_ham">Blog</li>
+          <li class="li2_ham">Careers</li>
+        </ul>
+      </li>
+  
+      <li class="li1_ham">
+        <button class="button_li_ham" onclick="AfficherMasquer4()">Connect<img src="images/icon-arrow-dark.svg" class="arrow_light_ham" style="margin-left: 8px;"></button>
+        <ul id="ul2_ham3" style="display:none;">
+          <li class="li2_ham">Contact</li>
+          <li class="li2_ham">Newsletter</li>
+          <li class="li2_ham">LinkedIn</li>
+        </ul>
+      </li>
+  
+      <div class="span_bar"></div>
+  
+      <button class="button1_ham">Login</button>
+      <button class="button2_ham">Sign up</button>
+  
+    </ul>
+  
+    <!-- LE RESTE -->
+  
+    <h1>A modern publishing platform</h1>
+    <h2>Grow your audience and build your online brand</h2>
+  
+    <div class="div_button">
+      <button class="button1">Start for Free</button>
+      <button class="button2">Learn More</button>
+    </div>
+  
+  
+  
+  
+  
+  </header>
+
+  <section class="section1">
+  
+    <h3>Designed for the future</h3>
+  
+    <div class="div_texte1">
+      <h4>Introducing an extensible editor</h4>
+  
+  
+      <p class="p1">Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content.
+        The editor supports management of multiple blogs and allows easy manipulation of embeds such as images,
+        videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or
+        change the looks of a blog.</p>
+  
+      <h4>Robust content management</h4>
+  
+      <p class="p2">Flexible content management enables users to easily move through posts. Increase the usability of your
+        blog
+        by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.</p>
+    </div>
+  
+  
+  
+  </section>
+  
+  <section class="section2">
+  
+    <img src="images/illustration-phones.svg" class="icon_portables">
+  
+    <div class="div_texte2">
+      <h5>State of the Art Infrastructure</h5>
+      With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
+      This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+    </div>
+  </section>
+  
+  
+  <section class="section3">
+
+    <div class="div_texte3">
+      <h6>Free, open, simple</h6>
+      Blogr is a free and open source application backed by a large community of helpful developers. It supports
+      features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools,
+      and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+    
+      <h6>Powerful tooling</h6>
+      Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze,
+      but
+      capable of producing even the most complicated sites.
+    </div>
+  </section>
+
+<footer>
+
+  <img src="images/logo.svg" class="img_logo2">
+
+  <div class="div_footer">
+    <p style="color: white; margin-bottom: 15px;">Product</p>
+
+      Overview
+      Pricing
+      Marketplace
+      Features
+      Integrations
+
+  </div>
+
+  <div class="div_footer">
+    <p style="color: white; margin-bottom: 15px;">Company</p>
+
+      About
+      Team
+      Blog
+      Careers
+  
+  </div>
+
+  <div class="div_footer">
+    <p style="color: white; margin-bottom: 15px;">Connect</p>
+
+      Contact
+      Newsletter
+      LinkedIn
+
+  </div>
+
+</footer>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+  Coded by <a href="#">Thomas Arnault</a>.
+  </div>
+</body>
+</html>
